@@ -1,15 +1,24 @@
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import App from './App.vue'
+import Foo from './Foo.vue'
+import Bar from './Bar.vue'
 
 Vue.config.productionTip = false
+Vue.use(VueRouter)
 
 const app = new Vue({
   render: h => h(App),
+  router: new VueRouter({
+    mode: 'hash',
+    routes: [
+      { path: '/app-2/foo', component: Foo },
+      { path: '/app-2/bar', component: Bar }
+    ]
+  })
 })
 
-// let isRendered = false;
-
-app.$mount('#app');
+app.$mount('#app-2')
 
 /**
  * bootstrap 只会在微应用初始化的时候调用一次，下次微应用重新进入时会直接调用 mount 钩子，不会再重复触发 bootstrap。

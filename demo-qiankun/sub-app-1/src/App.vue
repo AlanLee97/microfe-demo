@@ -3,6 +3,7 @@
     <h1>App-1</h1>
     <p class="text-class">啦啦啦</p>
     <p class="subapp-text-class">啦啦啦1122</p>
+    <router-view></router-view>
   </div>
 </template>
 
