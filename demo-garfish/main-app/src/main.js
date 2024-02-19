@@ -8,6 +8,10 @@ window.msg = '我是主应用'
 Garfish.run({
   basename: '/',
   domGetter: '#sub-app-container',
+  sandbox: {
+    snapshot: false,
+    strictIsolation: true
+  },
   apps: [
     {
       name: 'app-1',
