@@ -1,6 +1,6 @@
 
 //main.js
-import * as singleSpa from 'single-spa';
+import * as singleSpa from 'single-spa/lib/es2015/esm/single-spa.dev.js';
 
 const apps = [
   {

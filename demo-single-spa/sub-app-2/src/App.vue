@@ -1,6 +1,6 @@
 <template>
   <div id="sub-app-2">
-    <h1>App-2</h1>
+    <h1 class="color">App-2</h1>
     <router-view></router-view>
   </div>
 </template>
@@ -20,5 +20,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+</style>
+
+<style>
+.color {
+  color: red;
 }
 </style>

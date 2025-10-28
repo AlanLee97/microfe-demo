@@ -5,6 +5,8 @@ import WujieVue from "wujie-vue2";
 
 // import { bus, setupApp, preloadApp, startApp, destroyApp } from "wujie";
 
+// eslint-disable-next-line no-debugger
+debugger
 const { bus, setupApp, preloadApp, destroyApp } = WujieVue;
 
 Vue.use(WujieVue);

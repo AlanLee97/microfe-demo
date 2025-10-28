@@ -1,6 +1,6 @@
 <template>
   <div id="sub-app-1">
-    <h1>App-1</h1>
+    <h1 class="color">App-1</h1>
     <p class="text-class">啦啦啦</p>
     <p class="subapp-text-class">啦啦啦1122</p>
     <h1>路由</h1>
@@ -25,5 +25,9 @@ export default {
 
 .subapp-text-class {
   color: aqua;
+}
+
+.color {
+  color: green;
 }
 </style>
